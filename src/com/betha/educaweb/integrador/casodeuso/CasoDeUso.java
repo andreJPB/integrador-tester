@@ -25,4 +25,13 @@ public class CasoDeUso {
 	public List<Step> getPassos() {
 		return passos;
 	}
+	
+	public Step getPasso(int numero){
+		for(Step passo: passos){
+			if(passo.getNumero() == numero){
+				return passo;
+			}
+		}
+		return null;
+	}
 }

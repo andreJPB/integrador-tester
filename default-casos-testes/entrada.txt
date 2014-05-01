@@ -3,9 +3,23 @@ $COMENTARIO: Esse teste tem como finalidade executar o primeiro caso de teste de
 
 $STEP: 1
 #QUERY
-INSERTE: PRODUTOS
-VALORES: NULL, COCA-COLA, 25.5
+INSERTE: Produtos
+VALORES: NULL, 'COCA-COLA', 25.5
 
 #QUERY
-INSERTE: PRODUTOS
-VALORES: NULL, MOUSE, 1.3
+INSERTE: Produtos
+VALORES: NULL, 'COCA-COLA', 25.5
+
+#QUERY
+INSERTE: Produtos
+VALORES: NULL, 'COCA-COLA', 25.5
+
+#QUERY
+UPDATE: Produtos
+SET: descricao = 'FEIJAO'
+WHERE: codigo_produto = 1
+
+#QUERY
+SELECT: Produtos
+WHERE: codigo_produto = 67
+EXPECTED: 67, CACA-COLA, 25.50

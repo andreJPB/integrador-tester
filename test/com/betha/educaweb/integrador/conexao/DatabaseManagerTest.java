@@ -11,8 +11,8 @@ public class DatabaseManagerTest {
 	@Test
 	public void deveExecutarQuery(){
 		DatabaseManager manager = DatabaseManager.getInstance(InputConnectionFactory.getInstance());
-		String sql = "SELECT * FROM Clientes WHERE codigo_cliente = ?";
-		List<List<Object>> rs = manager.executarQuery(sql, 2);
+		String sql = "SELECT * FROM Clientes WHERE codigo_cliente = 2";
+		List<List<Object>> rs = manager.executarQuery(sql);
 		
 		for(List<Object> r: rs){
 			for(Object o: r){
