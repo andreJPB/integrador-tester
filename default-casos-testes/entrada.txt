@@ -1,0 +1,11 @@
+$ID: 1
+$COMENTARIO: Esse teste tem como finalidade executar o primeiro caso de teste de desenvolvimento
+
+$STEP: 1
+#QUERY
+INSERTE: PRODUTOS
+VALORES: NULL, COCA-COLA, 25.5
+
+#QUERY
+INSERTE: PRODUTOS
+VALORES: NULL, MOUSE, 1.3
